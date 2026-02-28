@@ -30,3 +30,21 @@ install choco PwSh
 
 ~ $ wget https://gitflic.ru/project/legioner9/st_rc_d/blob/raw?file=.d%2F.install.ax%2Fmain_install_stl.sh
 ~ $ . main_install_stl.sh
+
+https://selectel.ru/blog/ssh-authentication/
+# Key enters
+## Генерация (not now)
+добавление комментария с информацией о том, кто, на какой машине и когда создал ключ:
+
+     home_host
+     hh# ssh-keygen -C "$(whoami)@$(uname -n)-$(date -I)"
+
+## Copy to remote_host
+
+    hh# ssh-copy-id username@remote_host
+
+    hh#cat ~/.ssh/id_rsa.pub | ssh username@remote_host "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
+
+## check status ssh
+
+    rh#sudo systemctl status ssh
