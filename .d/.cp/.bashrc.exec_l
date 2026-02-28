@@ -1,0 +1,14 @@
+#!/bin/bash
+
+: > "$HOME"/null
+
+cd $HOME
+
+fn_nm_fwaeg231=$HOME/aer_foe/.d/.repo.d/.repo.rc
+
+[[ -f ${fn_nm_fwaeg231} ]] && {
+    . "${fn_nm_fwaeg231}" > $HOME/null || {
+        echo -e "in file://${fn_nm_fwaeg231} , line=${LINENO} :: EXEC : '. ${fn_nm_fwaeg231}', 'RESUME :: aer_foe .repo.rc FAIL' return 1${NRM}" >&2
+        return 1
+    }
+}

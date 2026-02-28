@@ -1,0 +1,33 @@
+Как использовать это изображение
+docker run  --name some-letschat --link some-mongo:mongo -d sdelements/lets-chat
+Если вы хотите получить доступ к экземпляру с хоста без указания IP-адреса контейнера, можно использовать стандартные сопоставления портов:
+
+docker run  --name some-letschat --link some-mongo:mongo -p 8080:8080 -d sdelements/lets-chat
+Затем получите к нему доступ через http://localhost:8080браузер http://host-ip:8080.
+
+... с помощьюdocker-compose
+Пример файла docker-compose.yml для sdelements/lets-chat:
+
+app:
+  image: sdelements/lets-chat
+  links:
+    - mongo
+  ports:
+    - 8080:8080
+    - 5222:5222
+
+mongo:
+  image: mongo:latest
+Запустите программу docker-compose up, дождитесь полной инициализации и перейдите по адресу http://localhost:8080или http://host-ip:8080.
+
+Конфигурация
+Вы можете настроить свой экземпляр Let's Chat в Docker одним из следующих способов:
+
+файл конфигурации
+Создайте файл settings.yml в каталоге, а затем смонтируйте этот каталог как том Docker.
+
+/usr/src/app/config
+
+переменные окружающей среды
+Список переменных окружения можно найти в вики-странице Let's Chat.
+https://github.com/sdelements/lets-chat/wiki/Environment-variables
