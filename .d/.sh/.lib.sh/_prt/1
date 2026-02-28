@@ -15,4 +15,4 @@
         hint="'file://${PPWD}' NOT_GIT_DIR";
         _st_exit "in fs= file://${fn_sh_file} , line=${LINENO}, ${FNN}() : : EXEC_FAIL : 'git rev-parse --show-toplevel' : ${hint} : return 1";
         return 1;
-    fi;
+    fi; 
