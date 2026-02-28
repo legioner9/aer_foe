@@ -1,0 +1,7 @@
+# setup-x86_64.exe add list.util
+
+# List.util
+scp
+sshfs
+
+# cp C:\cygwin64\bin C:\Program Files\Git\usr\bin

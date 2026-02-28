@@ -48,3 +48,13 @@ https://selectel.ru/blog/ssh-authentication/
 ## check status ssh
 
     rh#sudo systemctl status ssh
+
+## sshpass
+
+#!/bin/bash
+
+    USER="your_username"
+    HOST="your_hostname"
+    PASSWORD="your_password"
+
+    sshpass -p "$PASSWORD" ssh "$USER"@"$HOST" "$COMMAND"
