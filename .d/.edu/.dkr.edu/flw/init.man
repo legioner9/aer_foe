@@ -1,3 +1,12 @@
 # `docker version` (check all components)
 
 # `docker ps -a` lst run and stoped cntr
+# `docker images` local img
+# `docker pull hello-world` dowload to local hello-world dkrimg
+# `docker run hello-world:<tag>` crt dkrcntr from dkrimg if it notexist - dowload to local hello-world dkrimg and crt
+## standart dkrtags:
+- latest
+
+# `docker rm <dkrnm or dkrid>` remove dkrcntr - dkrnm or dkrid from `dkr ps -a`
+# `dkr ps -q` inly id dkrcntrs
+## ets.: `dkr ps -qa` id of all dkrcntrs
