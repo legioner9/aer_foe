@@ -2,4 +2,7 @@
 
 stl_env_nng_html=/usr/share/nginx/html
 
-dkr run --name nng -p 8080:80 -v $HOME/aer_foe/.d/.edu/.dkr.edu/www/index.html $stl_env_nng_html
+dkc stop nng
+dkr rm nng
+
+dkr run -d --name nng -p 8080:80 -v /c/Users/ProNout/aer_foe/.d/.edu/.dkr.edu/www:$stl_env_nng_html nginx
