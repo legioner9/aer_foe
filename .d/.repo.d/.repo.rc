@@ -1,16 +1,25 @@
 #!/bin/bash
 
 fn_caewr34tgwetr4g(){
-
+    
+    alias dkr="docker"
+    
     pro_pth=$HOME/aer_foe
     fn_nm=$pro_pth/.d/.repo.d/.repo.rc
-
-
+    als_nm=$pro_pth/.d/.repo.d/.repo.als
+    
+    
     echo "start $fn_nm"
 
-    . "$pro_pth/.d/.sh/l.sh" || {
-        echo ". $pro_pth/.d/.sh/l.sh - EXEC_ERROR" >&2
-    }
+    . "$als_nm"
+    
+    if [[ -f "$pro_pth/.d/.sh/l.sh" ]];then        
+        . "$pro_pth/.d/.sh/l.sh" || {
+            echo ". $pro_pth/.d/.sh/l.sh - EXEC_ERROR" >&2
+        }
+    else
+        echo ". $pro_pth/.d/.sh/l.sh - NOT_EXIST" >&2
+    fi
     
     l_01_c_up $pro_pth/.d/.sh/.lib.sh || {
         echo -e "${ECHO_RET1}in file://${fn_nm} , line=${LINENO} :: EXEC : 'l_01_c_up $pro_pth/.d/.sh/.lib.sh', 'RESUME :: LIBERR' return 1${NRM}" >&2

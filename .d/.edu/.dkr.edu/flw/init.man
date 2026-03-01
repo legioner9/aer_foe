@@ -1,1 +1,3 @@
 # `docker version` (check all components)
+
+# `docker ps -a` lst run and stoped cntr
