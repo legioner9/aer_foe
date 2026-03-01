@@ -15,7 +15,10 @@
 
 # `dkr container prune` del all dkrcntrs
 
-# `docker run hello-world:<tag>`
+# `docker kill <dkrnm or dkrid>` if stop not work
+
+# `dkr exec -it <dkrid> <command>` create new process in dkrcont
+# 
 
 
 
