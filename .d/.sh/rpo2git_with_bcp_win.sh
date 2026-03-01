@@ -15,8 +15,8 @@ fn_vewthhg5231454gfvs00(){
         echo "Copy start"
         rm -rf ".d\.bcp_dpl\vs_code\Snippets"
         mkdir ".d\.bcp_dpl\vs_code\Snippets"
-        cp -r "$HOME\AppData\Roaming\Code\User\snippets" ".d\.bcp_dpl\vs_code\Snippets"
-        cp -f "$HOME\AppData\Roaming\Code\User\settings.json" ".d\.bcp_dpl\vs_code\settings.json"
+        cp -rv "$HOME\AppData\Roaming\Code\User\snippets" ".d\.bcp_dpl\vs_code\Snippets"
+        cp -fv "$HOME\AppData\Roaming\Code\User\settings.json" ".d\.bcp_dpl\vs_code\settings.json"
     fi
     
     #! RM BAD DIR
