@@ -1,0 +1,5 @@
+# `dkr run -it busybox` interactiv + terminal
+
+    #ls
+    #ping 8.8.8.8
+    #exit

@@ -10,3 +10,9 @@
 # `docker rm <dkrnm or dkrid>` remove dkrcntr - dkrnm or dkrid from `dkr ps -a`
 # `dkr ps -q` inly id dkrcntrs
 ## ets.: `dkr ps -qa` id of all dkrcntrs
+
+# `dkr ps -q` inly id dkrcntrs
+
+
+
+
