@@ -1,2 +1,7 @@
 # may use?
 C:\cygwin64\home\ProNout
+
+## attempt to gitbash
+C:\cygwin64\usr\share\bash-completion\completions\_docker 
+
+C:\cygwin64\usr\share\bash-completion cp to C:\Program Files\Git\usr\share
