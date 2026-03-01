@@ -71,7 +71,8 @@
   "editor.stickyScroll.enabled": false,
   "files.associations": {
     "*.lst": "markdown",
-    "*.fol": "markdown"
+    "*.fol": "markdown",
+    "*.man": "markdown"
   },
   "markdown.preview.fontFamily": "'M+ 1mn regular',-apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif",
   "terminal.integrated.fontFamily": "Crystal,'M+ 1mn regular','M+ 1m regular','Victor Mono','PT Sans+','FreeSans+','Pragmata Pro Mono Regular',Consolas,'Courier New'",

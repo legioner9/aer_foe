@@ -12,12 +12,13 @@ fn_vewthhg5231454gfvs00(){
     unset yes
     read -rp "Rewrite Snippets VSCode :: only 'y'" yes
     if [ "y" == "$yes" ]; then
+        echo "Copy start"
         rm -rf ".d\.bcp_dpl\vs_code\Snippets"
         mkdir ".d\.bcp_dpl\vs_code\Snippets"
         cp -r "$HOME\AppData\Roaming\Code\User\snippets" ".d\.bcp_dpl\vs_code\Snippets"
         cp -f "$HOME\AppData\Roaming\Code\User\settings.json" ".d\.bcp_dpl\vs_code\settings.json"
     fi
-
+    
     #! RM BAD DIR
     
     if [[ -d $HOME/aer_foe/.d/.depo/ifo.d/ifo ]] ; then
