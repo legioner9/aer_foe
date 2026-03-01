@@ -6,3 +6,5 @@ sudo systemctl start docker
 sudo service docker start
 # start any
 sudo systemctl enable docker
+# stop
+sudo systemctl stop docker
