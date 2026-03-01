@@ -18,7 +18,7 @@
 # `docker kill <dkrnm or dkrid>` if stop not work
 
 # `dkr exec -it <dkrid> <command>` create new process in dkrcont
-# 
+
 
 
 

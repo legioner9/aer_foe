@@ -1,0 +1,8 @@
+# status
+sudo systemctl status docker
+# start
+sudo systemctl start docker
+## Для систем с SysVinit
+sudo service docker start
+# start any
+sudo systemctl enable docker
