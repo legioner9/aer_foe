@@ -1,9 +1,4 @@
 Флаг --format:
-
-
-
-
-
 Placeholder
 
 Description
@@ -60,18 +55,6 @@ Names of the volumes mounted in this container.
 
 Names of the networks attached to this container.
 
-
-
-
-
 Примеры:
-
-
-
 docker ps --format "{{.ID}}\t{{.RunningFor}}\t{{.Image}}"
-
-
-
-
-
 docker ps --format "{{.ID}}: {{.Command}}"

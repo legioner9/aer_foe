@@ -11,7 +11,12 @@
 # `dkr ps -q` inly id dkrcntrs
 ## ets.: `dkr ps -qa` id of all dkrcntrs
 
-# `dkr ps -q` inly id dkrcntrs
+# `dkr stop <dkrid>` stop id dkrcntrs
+
+# `dkr container prune` del all dkrcntrs
+
+# `docker run hello-world:<tag>`
+
 
 
 

@@ -1,0 +1,2 @@
+# `dkr run nginx` trm in log nginx
+# `dkr run -d nginx` exited terminal

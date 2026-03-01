@@ -1,5 +1,10 @@
 # `dkr run -it busybox` interactiv + terminal
 
-    #ls
-    #ping 8.8.8.8
-    #exit
+    # ls
+    # ping 8.8.8.8
+## hn
+    # hostname 
+## ip hn
+    # hostname -i
+## exit sh
+    # exit
