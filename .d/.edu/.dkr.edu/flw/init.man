@@ -11,7 +11,7 @@
 # `dkr ps -q` inly id dkrcntrs
 ## ets.: `dkr ps -qa` id of all dkrcntrs
 
-# `dkr stop <dkrid>` stop id dkrcntrs
+# `dkr stop <dkrid> <dkrid 2>` stop id dkrcntrs
 
 # `dkr container prune` del all dkrcntrs
 

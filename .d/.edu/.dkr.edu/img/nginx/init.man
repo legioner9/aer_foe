@@ -12,4 +12,10 @@
     # cat index.html
 
 # `dkr run --name nng nginx` start dkrcntr with Name
-# 
+
+# `dkr run --name nng -p 8080:80 nginx` start dkrcntr with Name
+## go to http://localhost:8080/
+
+$HOME/aer_foe/.d/.edu/.dkr.edu/www/index.html
+
+# `dkr run --name nng -p 8080:80 -v $HOME/aer_foe/.d/.edu/.dkr.edu/www/index.html  nginx` 

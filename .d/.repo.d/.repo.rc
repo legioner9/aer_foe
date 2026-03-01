@@ -2,7 +2,7 @@
 
 fn_caewr34tgwetr4g(){
     
-    alias dkr="docker"
+    # alias dkr="docker"
     
     pro_pth=$HOME/aer_foe
     fn_nm=$pro_pth/.d/.repo.d/.repo.rc
