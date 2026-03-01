@@ -1,6 +1,6 @@
-#!/usr/bin/bash
+#!/bin/bash
 
-fn_vewthhg5231454gfvs000(){
+fn_vewthhg5231454gfvs00(){
     
     DDir=$(pwd)
     cd "$HOME/aer_foe"
@@ -16,7 +16,7 @@ fn_vewthhg5231454gfvs000(){
         mkdir ".d\.bcp_dpl\vs_code\Snippets"
         cp -r "C:\Users\ProNout\AppData\Roaming\Code\User\snippets" ".d\.bcp_dpl\vs_code\Snippets"
     fi
-    
+
     #! RM BAD DIR
     
     if [[ -d $HOME/aer_foe/.d/.depo/ifo.d/ifo ]] ; then
@@ -53,4 +53,4 @@ fn_vewthhg5231454gfvs000(){
     
 }
 
-fn_vewthhg5231454gfvs000 @
+fn_vewthhg5231454gfvs00 @
