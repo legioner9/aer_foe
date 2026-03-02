@@ -1,0 +1,1 @@
+# `dkr run --rn <dkrimg>` if stop -> dkr rm <dkrcntr>  
