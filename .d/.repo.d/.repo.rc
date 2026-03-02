@@ -31,9 +31,9 @@ fn_caewr34tgwetr4g(){
         return 1
     }
     
-    if [[ -z "$(sudo systemctl status docker| grep running)" ]] ;then
-        sudo systemctl start docker
-    fi
+    # if [[ -z "$(sudo systemctl status docker| grep running)" ]] ;then
+    #     sudo systemctl start docker
+    # fi
 }
 
 fn_caewr34tgwetr4g @ > "$HOME"/null
