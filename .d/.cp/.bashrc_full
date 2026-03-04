@@ -13,7 +13,7 @@ fi
 #* file example inner text for ~/.bashrc  --------- START INNER ------------
 
 parse_lib_conf_fn() {
-
+  
     [ -f ${HOME}/.bashrc.lib.conf ] || {
 
         #* default .bashrc.lib.conf:
