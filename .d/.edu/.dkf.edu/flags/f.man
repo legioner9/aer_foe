@@ -18,5 +18,3 @@ CMD ["python", "main.py"]
 # CMD ["python", "main.py"]
 - in dkc ! be start process
 - `$ python main.py` init command, analog `dkr exec`
-
-# `dkr build -t <nmdkrimg:tgdkrimg>` my_app:1.3.5

@@ -1,0 +1,1 @@
+# `dkr build -t <nmdkrimg:tgdkrimg>` my_app:1.3.5

@@ -1,0 +1,1 @@
+# `dkr build <dir with dkf> -f <nmdkf>` -f if nmdkf != dockerfile
