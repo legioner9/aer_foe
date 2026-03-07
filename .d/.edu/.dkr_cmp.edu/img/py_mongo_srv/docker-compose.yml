@@ -3,5 +3,5 @@ version: '3'
 services:
   app_srv:
     build: ./app
-  mongo_srv:
+  mongo:
     image: mongo
