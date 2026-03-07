@@ -19,6 +19,9 @@
 
 # `dkr exec -it <dkrid> <command>` create new process in dkrcont
 
+# `dkr build -t <nmdkrimg:tgdkrimg>` my_app:1.3.5
+# `dkr build <dir with dkf> -f <nmdkf>` -f if nmdkf != dockerfile
+
 
 
 
