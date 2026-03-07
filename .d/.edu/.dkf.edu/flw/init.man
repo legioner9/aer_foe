@@ -1,0 +1,19 @@
+# min dockerfile:
+
+```dockerfile
+FROM python:alpine
+WORKDIR /app
+COPY . .
+CMD ["python", "main.py"]
+```
+
+# FROM python:alpine
+- base dkrimg
+# WORKDIR /app
+- create dir in dkrimg in / dir
+- cd in /app
+# CPY . .
+- (.)dot - if dkf in rootprj - ALL files prj
+- be copyed to /app as (pwd) in imj
+# CMD ["python", "main.py"]
+- `$ python main.py` init command, analog `dkr exec`
