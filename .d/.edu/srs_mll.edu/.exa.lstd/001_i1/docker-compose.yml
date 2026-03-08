@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  todo:
+    container_name: stl_todo
+    build: 
+      dockerfile: ./wrkdr/dockerfile.stl_todo
