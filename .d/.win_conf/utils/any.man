@@ -1,0 +1,9 @@
+Некоторые полезные пакеты в составе inetutils для Cygwin:
+
+- inetutils-debuginfo. Содержит информацию для отладки inetutils.
+
+- inetutils-server. Включает общие сетевые клиенты и серверы.
+
+- inetutils-tools. Содержит сетевые инструменты, такие как traceroute и ifconfig.
+
+Пакет inetutils предоставляет различные сетевые клиенты и серверы, в том числе inetd, telnetd и telnet, ftpd и ftp, talkd и talk, uucpd и syslogd

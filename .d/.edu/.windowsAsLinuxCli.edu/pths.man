@@ -1,3 +1,0 @@
-C:\Program Files\Git\mingw64 main git cli
-
-C:\cygwin64\bin cp to C:\Program Files\Git\usr\bin
