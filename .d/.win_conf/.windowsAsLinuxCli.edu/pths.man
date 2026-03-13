@@ -2,5 +2,13 @@ C:\Program Files\Git\mingw64 main git cli
 
 C:\cygwin64\bin cp to C:\Program Files\Git\usr\bin
 
+from cgwin: `/etc/inetd.conf` copy to git_bash: `/etc/inetd.conf`
+
+
+## attempt to gitbash
+C:\cygwin64\usr\share\bash-completion\completions\_docker 
+
+C:\cygwin64\usr\share\bash-completion cp to C:\Program Files\Git\usr\share
+
 D:\Git-2.53.0-64-bit.exe
 D:\setup-x86_64.exe

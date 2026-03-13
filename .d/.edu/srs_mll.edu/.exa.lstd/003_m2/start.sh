@@ -20,6 +20,7 @@ in telnet print q for exit
 "
 
 echo "hello daemon" | telnet localhost 1234 
-
+telnet localhost 1234
+read
 echo "docker logs daemon"
 docker logs daemon
