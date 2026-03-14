@@ -51,7 +51,7 @@ fn_vewthhg5231454gfvs(){
     
     cd ${DDir}
 
-    . $HOME\edu_lnx\.d\.sh\rpo2git.sh
+    . $HOME/edu_lnx/.d/.sh/rpo2git.sh
     
 }
 
