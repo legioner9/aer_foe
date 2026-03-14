@@ -50,6 +50,8 @@ fn_vewthhg5231454gfvs(){
     fi
     
     cd ${DDir}
+
+    . $HOME\edu_lnx\.d\.sh\rpo2git.sh
     
 }
 
