@@ -51,8 +51,12 @@ fn_vewthhg5231454gfvs(){
     
     cd ${DDir}
 
+if [[ -f $HOME/edu_lnx/.d/.sh/rpo2git.sh ]] ;then
     . $HOME/edu_lnx/.d/.sh/rpo2git.sh
+    else
+        echo -e "${ECHO_WARN}in file://$HOME\aer_foe\.d\.sh\rpo2git.sh , line=${LINENO}  EXEC : '[[ -f $HOME/edu_lnx/.d/.sh/rpo2git.sh ]]' in $(pwd), 'RESUME :: $HOME/edu_lnx/.d/.sh/rpo2git.sh IS_NOT file' return 1${NRM}" >&2
     
+    fi
 }
 
 fn_vewthhg5231454gfvs @
