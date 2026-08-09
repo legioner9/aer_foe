@@ -1,0 +1,2 @@
+# copy make_002.frp 
+- add param : dir for create prj - not in root dir

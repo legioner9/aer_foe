@@ -1,0 +1,2 @@
+exec:: 'fnc_nm 1'
+arg0=fnc_nm, arg1=1

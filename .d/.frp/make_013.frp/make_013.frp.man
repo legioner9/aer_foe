@@ -1,0 +1,7 @@
+&&&dr creater fss with tst
+
+COPY_FROM: ~/aer_foe/.d/.frp/make_012.frp
+FLOW: ~/edu_clng/.d/.crl/edu_clang_c.crl.d/edu_clang_c.crl.crd/a_edu_clang_c.fn/002/_.d/.tst/flow1.tst.d
+DEST: _.f.d as dr with tml for ins fn
+
+@@@cli tst copy frp to any dir ::: . '${HOME}/aer_foe/.d/.frp/make_013.frp/.tst_frp2dr/start_tst_2.sh

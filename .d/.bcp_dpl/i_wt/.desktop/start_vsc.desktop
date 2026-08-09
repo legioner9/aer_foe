@@ -1,0 +1,8 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Terminal=true
+Type=Application
+Exec=/bin/bash . ~/.bashrc & . ~/aer_foe/.d/.sh/start_code_lnx.sh
+Comment=Запуск Firefox с профилем разработчика
+Actions=
+Icon=~/edu_dta/fl.d/0004.fl.d/material_icon.png/_main/baseline_code_black_48dp.png

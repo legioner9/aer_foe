@@ -1,0 +1,24 @@
+[user]
+	email = legioner9@inbox.ru
+	name = legioner9
+[safe]
+	directory = /run/media/st/MY_ONE/new_bare/aer_foe
+	directory = /run/media/st/MY_ONE/new_bare/edu_clang
+	directory = /run/media/st/MY_ONE/new_bare/edu_dta
+	directory = /run/media/st/MY_ONE/new_bare/edu_lnx
+	directory = /run/media/st/MY_ONE/new_bare/tml_a
+	directory = /run/media/st/MY_ONE/new_bare/cmn_lex
+	directory = /run/media/st/MY_ONE/new_bare/fns_bsh
+	directory = /run/media/st/MY_ONE/new_bare/git_flw
+
+	directory = /run/media/stl/TOSH/new_bare/aer_foe
+	directory = /run/media/stl/TOSH/new_bare/edu_clang
+	directory = /run/media/stl/TOSH/new_bare/edu_dta
+	directory = /run/media/stl/TOSH/new_bare/edu_lnx
+	directory = /run/media/stl/TOSH/new_bare/tml_a
+	directory = /run/media/stl/TOSH/new_bare/cmn_lex
+	directory = /run/media/stl/TOSH/new_bare/fns_bsh
+	directory = /run/media/stl/TOSH/new_bare/git_flw
+
+
+	

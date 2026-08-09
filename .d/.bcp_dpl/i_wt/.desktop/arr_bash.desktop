@@ -1,0 +1,8 @@
+[Desktop Entry]
+Terminal=true
+Type=Application
+Exec=/bin/bash ~/aer_foe/.d/.tmp/for_arr.sh & read
+Comment=Запуск Firefox с профилем разработчика
+Actions=
+Icon=~/Загрузки/google-material-design-icons-b3f05bf/material_icon.png/hardware/computer/materialicons/48dp/2x/baseline_computer_black_48dp.png
+

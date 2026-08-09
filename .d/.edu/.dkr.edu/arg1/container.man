@@ -1,0 +1,3 @@
+# `dkr container prune` del all dkrcntrs
+# `dkr container inspect <dkrid>` inspect run dkrcont (infoooo)
+# 

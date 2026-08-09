@@ -1,0 +1,29 @@
+# `docker version` (check all components)
+
+# `docker ps -a` lst run and stoped cntr
+# `docker images` local img
+# `docker pull hello-world` dowload to local hello-world dkrimg
+# `docker run hello-world:<tag>` crt dkrcntr from dkrimg if it notexist - dowload to local hello-world dkrimg and crt
+## standart dkrtags:
+- latest
+
+# `docker rm <dkrnm or dkrid>` remove dkrcntr - dkrnm or dkrid from `dkr ps -a`
+# `dkr ps -q` inly id dkrcntrs
+## ets.: `dkr ps -qa` id of all dkrcntrs
+
+# `dkr stop <dkrid> <dkrid 2>` stop id dkrcntrs
+
+# `dkr container prune` del all dkrcntrs
+
+# `docker kill <dkrnm or dkrid>` if stop not work
+
+# `dkr exec -it <dkrid> <command>` create new process in dkrcont
+
+# `dkr build -t <nmdkrimg:tgdkrimg>` my_app:1.3.5
+# `dkr build <dir with dkf> -f <nmdkf>` -f if nmdkf != dockerfile
+
+
+
+
+
+

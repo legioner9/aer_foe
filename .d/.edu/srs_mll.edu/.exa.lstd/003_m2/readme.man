@@ -1,0 +1,21 @@
+# Запуск контейнеров в качестве демонов (m2p44)
+
+<!-- ![cdsadc](../../.jpg/XXX) -->
+
+Флаг -d, когда используется с командой docker run, запускает контейнер
+в качестве демона. Флаг -i дает этому контейнеру возможность взаимодей-
+ствовать с вашим сеансом Telnet. С помощью флага -p вы «публикуете» порт
+1234 из контейнера на хост.
+
+    $ docker run -d -i -p 1234:1234 --name daemon ubuntu:14.04 nc -l 1234
+
+    $ telnet localhost 1234
+        Trying ::1...
+        Connected to localhost.
+        Escape character is '^]'.
+    hello daemon
+        ^]
+    telnet> q
+        Connection closed.
+    $ docker logs daemon
+    hello daemon

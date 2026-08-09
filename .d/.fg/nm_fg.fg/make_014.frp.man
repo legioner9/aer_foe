@@ -1,0 +1,9 @@
+&&&dr creater fss with tst
+
+COPY_FROM: ~/aer_foe/.d/.frp/make_013.frp
+FLOW: ~/aer_foe/.d/.crl/aer_foe_c.crl.d/aer_foe_c.crl.crd/a_aer_foe_c.fn/008/_.d/.tst/flow1.tst.d/flow1.tst
+DEST: 
+    - _.f.d notarg -> bind with gig_dr.sh
+    - prepare fs for check .tst - first printf flow
+
+@@@cli tst copy frp to any dir ::: . '${HOME}/aer_foe/.d/.frp/make_014.frp/.tst_frp2dr/start_tst_2.sh

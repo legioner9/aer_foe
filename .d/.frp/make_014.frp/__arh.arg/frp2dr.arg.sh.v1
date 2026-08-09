@@ -1,0 +1,2 @@
+. ~/aer_foe/.d/.frp/make_014.frp/frp2dr.sh \
+	 ~/aer_foe/.d/.crl/aer_foe_c.crl.d/aer_foe_c.crl.crd/.frc.14.v3 #dst_pth_to_cp

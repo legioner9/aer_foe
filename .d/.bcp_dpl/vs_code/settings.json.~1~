@@ -1,0 +1,94 @@
+{
+  // 26+0527
+  "files.autoSave": "onFocusChange",
+  // "[javascript]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  "csharp.inlayHints.enableInlayHintsForImplicitObjectCreation": true,
+  "csharp.debug.logging.diagnosticsLog.dispatcherMessages": "error",
+  "markdown-preview-enhanced.previewTheme": "github-dark.css",
+  "workbench.editor.empty.hint": "hidden",
+  "[jsonc]": {
+    "editor.defaultFormatter": "mkhl.shfmt"
+  },
+  "todo-tree.customHighlight": {
+    "TODO": {
+      "icon": "check",
+      "type": "line",
+      "iconColour": "yellow",
+      "foreground": "red",
+      "background": "yellow"
+    },
+    "FIXME": {
+      "icon": "beaker",
+      "iconColour": "red",
+      "foreground": "white",
+      "background": "red"
+    }
+  },
+  "security.allowedUNCHosts": [
+    "wsl.localhost"
+  ],
+  "todo-tree.highlights.customHighlight": {
+    "TODO": {
+      "icon": "check",
+      "type": "line",
+      "iconColour": "yellow",
+      "foreground": "red",
+      "background": "yellow"
+    },
+    "FIXME": {
+      "icon": "beaker",
+      "iconColour": "red",
+      "foreground": "white",
+      "background": "red"
+    }
+  },
+  "files.exclude": {
+    "**/.git": false,
+    "**/.gitX": true
+  },
+  "terminal.external.windowsExec": "C:\\Program Files\\Git\\git-bash.exe",
+  "terminal.explorerKind": "external",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "[shellscript]": {
+    "editor.defaultFormatter": "mkhl.shfmt"
+  },
+  "editor.fontFamily": "'M+ 1m regular','M+ 1mn regular','M+ 1 regular','M+ 1m regular','Victor Mono','PT Sans+','FreeSans+','Pragmata Pro Mono Regular',Consolas,'Courier New'",
+  "editor.defaultFormatter": "mkhl.shfmt",
+  // "[javascript]": {
+  //   "editor.defaultFormatter": "mkhl.shfmt"
+  // },
+  "[csharp]": {
+    "editor.defaultFormatter": "mkhl.shfmt"
+  },
+  "editor.minimap.autohide": "scroll",
+  "git.openRepositoryInParentFolders": "never",
+  // "debug.inlineValues": false,
+  "editor.minimap.enabled": false,
+  "csharp-dev-tools.solutionViewer.trackActiveFile": false,
+  "csharp-dev-tools.solutionViewer.folderColorTheme": "blue",
+  "editor.stickyScroll.enabled": false,
+  "files.associations": {
+    "*.lst": "markdown",
+    "*.fol": "markdown",
+    "*.man": "markdown"
+  },
+  "markdown.preview.fontFamily": "'M+ 1mn regular',-apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif",
+  "terminal.integrated.fontFamily": "Crystal,'M+ 1mn regular','M+ 1m regular','Victor Mono','PT Sans+','FreeSans+','Pragmata Pro Mono Regular',Consolas,'Courier New'",
+  "[perl]": {
+    "editor.defaultFormatter": "mkhl.shfmt"
+  },
+  // for win
+  "shellformat.path": "/usr/bin/shfmt",
+  "workbench.colorTheme": "bashling",
+  "[snippets]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "chat.disableAIFeatures": true,
+  "[c]": {
+    "editor.defaultFormatter": "mkhl.shfmt"
+  },
+  "clang-format.executable": "mkhl.shfmt",
+  "workbench.iconTheme": "material-icon-theme"
+}

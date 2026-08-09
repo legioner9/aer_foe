@@ -1,0 +1,28 @@
+	.file	"a.c"
+	.text
+	.section	.rodata
+.LC0:
+	.string	"a)-"
+	.text
+	.globl	a
+	.type	a, @function
+a:
+.LFB0:
+	.cfi_startproc
+	pushq	%rbp
+	.cfi_def_cfa_offset 16
+	.cfi_offset 6, -16
+	movq	%rsp, %rbp
+	.cfi_def_cfa_register 6
+	leaq	.LC0(%rip), %rax
+	movq	%rax, %rdi
+	call	puts@PLT
+	nop
+	popq	%rbp
+	.cfi_def_cfa 7, 8
+	ret
+	.cfi_endproc
+.LFE0:
+	.size	a, .-a
+	.ident	"GCC: (GNU) 13.2.1 20240128 (ALT Sisyphus 13.2.1-alt3)"
+	.section	.note.GNU-stack,"",@progbits

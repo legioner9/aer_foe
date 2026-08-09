@@ -1,0 +1,4 @@
+&&&dr creater fss with mutiplay includ pth crl
+
+
+@@@cli tst copy frp to any dir ::: . '${HOME}/aer_foe/.d/.frp/make_010.frp/.tst_frp2dr/start_tst_2.sh

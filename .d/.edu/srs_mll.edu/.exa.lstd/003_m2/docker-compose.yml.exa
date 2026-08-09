@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  todo:
+  # не работает такое именование
+    container_name: stl_todo
+    build: 
+      dockerfile: ./wrkdr/dockerfile.stl_todo

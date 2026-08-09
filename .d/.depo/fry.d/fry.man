@@ -1,0 +1,48 @@
+prox 217.177.32.161! 5533!!> stlk1a!> 321!!>
+
+sudo systemctl daemon-reload
+sudo systemctl enable 3proxy
+sudo systemctl start 3proxy
+
+curl --proxy Ip:Port -U username:password check-host.net/ip
+curl --proxy 185.228.234.06!:4433 -U stl:123 check-host.net/ip
+
+Конфигурационный файл: vim /usr/local/3proxy/conf/3proxy.cfg
+Лог-файлы: /var/log/3proxy/
+
+ssh –t user@server.com ‘sudo reboot’
+
+ssh-copy-id user@server_ip
+
+- make server ---------
+купить VPS минимальный (до 300р мес в европе норм стране - не казахия)))
+https://hostvds.com/#cloud
+https://mchost.ru/services/linux-vps/linux/
+
+на сервер поставить Ubuntu 22 или 24
+сохранить пароль и ip-сервера
+пароль вводить в консоль по запросу (вставить сочетанием клавишей shift-insert)
+
+на комп скачать и поставить https://gitforwindows.org/
+
+в консоли гит-баша: (один раз сгенерировать ключи на компьютере!)
+ssh-keygen
+ssh-copy-id root@ip-сервера
+
+в консоли сервера ввести (один раз установить! vpn на сервер)
+sudo apt update && sudo apt upgrade -y && wget https://git.io/vpn -O openvpn-install.sh && chmod  +x openvpn-install.sh && bash openvpn-install.sh
+
+для того что бы зайти на сервер
+ssh root@ip-сервера
+попадаем в консоль сервера
+
+клавиша [таб 2 раза] продолжить команду в консоли или предложи не сколько вариантов
+клавиша [вверх] выведет в командную строку предыдущие команда 
+
+для генерации файла .ovpn в консоли сервера
+. openvpn-install.sh
+выбирать пункты меню и ввести имя файла без расширения
+
+для того что бы скопировать файлы ovpn 
+1. в консоли перейти в директорию где будете их хранить 
+2. scp root@ip-сервера:/root/*.ovpn .

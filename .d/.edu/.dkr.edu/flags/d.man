@@ -1,0 +1,1 @@
+# `dkr run -d <dkrimg>` detouch (exit from -it)
