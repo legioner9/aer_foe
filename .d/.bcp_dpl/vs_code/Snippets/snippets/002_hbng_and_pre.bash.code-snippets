@@ -47,4 +47,12 @@
 		],
 		"description": "#!bash"
 	},
+	// # from:: 
+		"#* from::": {
+		"prefix": "#* from:: ~",
+		"body": [
+			"#* from:: ",
+		],
+		"description": "#* from:: ~"
+	},
 }
