@@ -33,11 +33,11 @@ fn_vewthhg5231454gfvs() {
 
 	#! far any function
 
-	# local repo_all_arr_234543htrbg=(aer_foe edu_clng edu_dta_001 edu_lnx tml_a cmn_lex fns_bsh git_flw)
-	# local repo_any_arr_234543htrbg=(edu_clng edu_dta_001 edu_lnx tml_a cmn_lex fns_bsh git_flw)
+	local repo_all_arr_234543htrbg=(aer_foe edu_clng edu_dta_001 edu_dta_002 edu_lnx tml_a cmn_lex fns_bsh git_flw)
+	local repo_any_arr_234543htrbg=(edu_clng edu_dta_001 edu_dta_002 edu_lnx tml_a cmn_lex fns_bsh git_flw)
 
-	local repo_all_arr_234543htrbg=(aer_foe edu_clng edu_lnx tml_a cmn_lex fns_bsh git_flw)
-	local repo_any_arr_234543htrbg=(edu_clng edu_lnx tml_a cmn_lex fns_bsh git_flw)
+	# local repo_all_arr_234543htrbg=(aer_foe edu_clng edu_lnx tml_a cmn_lex fns_bsh git_flw)
+	# local repo_any_arr_234543htrbg=(edu_clng edu_lnx tml_a cmn_lex fns_bsh git_flw)
 
 	cd ${DDir}
 	check_repo_adcae_12344() {
