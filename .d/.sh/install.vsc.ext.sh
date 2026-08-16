@@ -35,3 +35,6 @@ code --install-extension moshfeu.compare-folders
 # symlinks
 code --install-extension anbuselvan.vscode-symlink
 # color md files
+
+# shellchec k
+code --install-extension timonwong.shellcheck
