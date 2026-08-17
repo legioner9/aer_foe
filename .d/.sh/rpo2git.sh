@@ -36,6 +36,9 @@ fn_vewthhg5231454gfvs() {
 	local repo_all_arr_234543htrbg=(aer_foe edu_clng edu_dta_001 edu_dta_002 edu_lnx tml_a cmn_lex fns_bsh git_flw)
 	local repo_any_arr_234543htrbg=(edu_clng edu_dta_001 edu_dta_002 edu_lnx tml_a cmn_lex fns_bsh git_flw)
 
+	#! ~/rpo
+	local repo_in_rpo_any_arr_234543htrbgfwr3442=(rpo_dta_001)
+
 	# local repo_all_arr_234543htrbg=(aer_foe edu_clng edu_lnx tml_a cmn_lex fns_bsh git_flw)
 	# local repo_any_arr_234543htrbg=(edu_clng edu_lnx tml_a cmn_lex fns_bsh git_flw)
 
@@ -146,6 +149,58 @@ fn_vewthhg5231454gfvs() {
 		fi
 	}
 
+	add_local_repo_from_rpo_56277647vcafdfd() {
+
+		l_00_echo_code "\$part_bare=$part_bare"
+
+		# sudo find /run/media/stl/TOSH/ -type d -exec chmod 755 {} \;
+		# sudo find /run/media/stl/TOSH/ -type f -exec chmod 644 {} \;
+
+		if [[ -d "$part_bare/" ]]; then
+			l_00_echo_info "STP:: for ALL rpo - init bare if not exist"
+			if ! [[ -d "$part_bare/new_bare" ]]; then
+				mkdir -p "$part_bare/new_bare"
+			fi
+
+			if [[ $(stat -c "%U" $part_bare/new_bare/) != "$USER" ]]; then
+				sudo chown -R $USER $part_bare/new_bare/
+			fi
+
+			local item2=
+			for item2 in ${repo_in_rpo_any_arr_234543htrbgfwr3442[@]}; do
+				l_00_echo_code "in $item2"
+				if ! [[ -d "$part_bare/new_bare/${item2}" ]]; then
+
+					mkdir -p "$part_bare/new_bare/${item2}"
+
+					if [[ $(stat -c "%U" $part_bare/new_bare/${item2}) != "$USER" ]]; then
+						l_00_echo_code "sudo chown -R $USER $part_bare/new_bare/${item2}"
+						sudo chown -R $USER $part_bare/new_bare/${item2}
+					fi
+
+					l_00_echo_code "cd $part_bare/new_bare/${item2}"
+					cd "$part_bare/new_bare/${item2}"
+					git init --bare
+				fi
+
+			done
+
+			l_00_echo_info "STP:: git push to local bare ALL rpo"
+
+			local item3=
+			for item3 in ${repo_in_rpo_any_arr_234543htrbgfwr3442[@]}; do
+				l_00_echo_info "---in ~/${item3}---"
+				cd ~/${item3}
+				git push $part_bare/new_bare/${item3} master
+			done
+
+		else
+
+			l_00_echo_err "$part_bare NOT_EXIST"
+
+		fi
+	}
+
 	# in .gitconfig :
 	# [safe]
 	# directory = G:/new_bare/aer_foe
@@ -155,16 +210,16 @@ fn_vewthhg5231454gfvs() {
 
 	local part_bare="G:"
 	add_local_repo_56277647
+	add_local_repo_from_rpo_56277647vcafdfd
 
 	part_bare="/run/media/$USER/MY_ONE"
 	add_local_repo_56277647
+	add_local_repo_from_rpo_56277647vcafdfd
 
 	part_bare="/run/media/$USER/TOSH"
 	add_local_repo_56277647
+	add_local_repo_from_rpo_56277647vcafdfd
 
-
-	#! ~/rpo
-	local repo_in_rpo_any_arr_234543htrbgfwr3442=(rpo_dta_001)
 	# local repo_in_rpo_any_arr_234543htrbgfwr3442=(rpo_dta_001 rpo_dta_002 rpo_pax_001 rpo_pax_002 rpo_pax_sh)
 	local item_pth_rpo=
 	for item_pth_rpo in ${repo_in_rpo_any_arr_234543htrbgfwr3442[@]}; do
@@ -174,8 +229,6 @@ fn_vewthhg5231454gfvs() {
 			echo -e "${ECHO_WARN}in file://$HOME\$nm_rpo2git_2345ff\.d\.sh\rpo2git.sh , line=${LINENO}  EXEC : '[[ -f $HOME/$nm_rpo2git_2345ff/.d/.sh/rpo2git.sh ]]' in $(pwd), 'RESUME :: $HOME/$nm_rpo2git_2345ff/.d/.sh/rpo2git.sh IS_NOT file' return 1${NRM}" >&2
 		fi
 	done
-
-	
 
 }
 
