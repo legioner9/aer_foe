@@ -161,22 +161,6 @@ fn_vewthhg5231454gfvs() {
 
 	part_bare="/run/media/$USER/TOSH"
 	add_local_repo_56277647
-
-
-	#! ~/rpo
-	local repo_in_rpo_any_arr_234543htrbgfwr3442=(rpo_dta_001)
-	# local repo_in_rpo_any_arr_234543htrbgfwr3442=(rpo_dta_001 rpo_dta_002 rpo_pax_001 rpo_pax_002 rpo_pax_sh)
-	local item_pth_rpo=
-	for item_pth_rpo in ${repo_in_rpo_any_arr_234543htrbgfwr3442[@]}; do
-		if [[ -f $HOME/rpo/$item_pth_rpo/.d/.sh/rpo2git.sh ]]; then
-			. $HOME/rpo/$item_pth_rpo/.d/.sh/rpo2git.sh
-		else
-			echo -e "${ECHO_WARN}in file://$HOME\$nm_rpo2git_2345ff\.d\.sh\rpo2git.sh , line=${LINENO}  EXEC : '[[ -f $HOME/$nm_rpo2git_2345ff/.d/.sh/rpo2git.sh ]]' in $(pwd), 'RESUME :: $HOME/$nm_rpo2git_2345ff/.d/.sh/rpo2git.sh IS_NOT file' return 1${NRM}" >&2
-		fi
-	done
-
-	
-
 }
 
 fn_vewthhg5231454gfvs $@
