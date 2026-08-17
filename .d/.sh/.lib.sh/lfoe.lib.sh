@@ -357,6 +357,120 @@ lfoe_rpo2git() {
 	cd ${DDir}
 }
 
+lfoe_rpo2git_pth() {
+
+	ping gitflic.ru -c 1 >/dev/null || {
+		echo -e "${ECHO_RET1}in file://$fn_nm , line=${LINENO}  EXEC : '[[ ping gitflic.ru -c 1 >/dev/null ]]', return 1${NRM}" >&2
+		return 1
+	}
+
+	[[ -n "$2" ]] || {
+		echo -e "${ECHO_RET1}in file://$fn_nm , line=${LINENO} ARG2_IS_EMPTY : is name rpo , return 1${NRM}" >&2
+		return 1
+	}
+
+	DDir=$(pwd)
+	#? aer="aer_foe"
+	local aer="$1"
+	local pth="$2"
+	local aer_pth=
+
+	if [[ "@" == "$2" ]]; then
+		aer_pth=$aer
+	else
+		aer_pth=$pth/$aer
+	fi
+
+	local hrepo="gf"
+
+	if [[ "$3" == "-h" ]]; then
+		echo -e "
+	that :: ${HOME}/$aer_pth/.d/.sh/rpo2git.sh
+	help info :: 
+	\$1 :: repo_nm
+	\$2 ::( \$2!=@ => pth_to_rpo=\${HOME}/\$2/\$1 | \$2==@ => pth_to_rpo=\${HOME}/\$1 )
+    or::	\$1
+			-h :: echo this help
+			-i :: init flow first push this repo to $hrepo - that head_repo=hrepo
+				git remote add $hrepo git@gitflic.ru:legioner9/$aer.git
+				git push $hrepo master			
+	"
+		return 0
+	fi
+
+	if [[ "$3" == "-i" ]]; then
+		echo -e "
+	that :: ${HOME}/$aer_pth/.d/.sh/rpo2git.sh
+	-i :: init flow first push init_commit this repo to $hrepo - that head_repo=hrepo
+		git remote add $hrepo git@gitflic.ru:legioner9/$aer.git
+		git push $hrepo master
+	"
+		read -p "^C refuse that flow?"
+		git remote add $hrepo git@gitflic.ru:legioner9/$aer.git
+		git push $hrepo master
+		return 0
+	fi
+
+	cd "$HOME/$aer_pth"
+
+	#! UNCOMMENT FOR ADD REMOTE
+	#.. git remote add gh git@github.com:legioner9/$aer.git
+	#.. git remote add gf git@gitflic.ru:legioner9/$aer.git
+	#.. git remote add alt ssh://forgejo@altlinux.space/legioner9/$aer.git
+
+	lfoe_this_dir_git2e || {
+		echo -e "${ECHO_RET1}in file://$HOME\$aer_pth\.d\.sh\rpo2git.sh , line=${LINENO}  EXEC : '[[ $(lfoe_this_dir_git2e) == $HOME/$aer_pth ]]' in $(pwd), 'RESUME :: $(pwd) IS_NOT_GIT_DR' return 1${NRM}" >&2
+		return 1
+	}
+
+	l_00_echo_code "git pull $hrepo master"
+	git pull $hrepo master || {
+
+		echo -e "${ECHO_WARN}in file://$HOME\$aer\.d\.sh\rpo2git.sh , \
+		line=${LINENO} :: EXEC : 'git pull gf master', 'RESUME :: gf ERROR' continue ${NRM}" >&2
+
+		l_00_echo_code "git pull $hrepo master | grep stash"
+
+		if git pull $hrepo master 2>&1 | grep stash; then
+			l_00_echo_code "git stash"
+			git stash
+			l_00_echo_code "git pull $hrepo master"
+			if git pull $hrepo master; then
+				l_00_echo_succ "continue"
+				git stash pop
+				git add .
+				git commit -m "<>"
+				git push gf master
+				git push alt master
+				git push gh master
+			else
+				echo -e "${ECHO_RET1}in file://$HOME\$aer\.d\.sh\rpo2git.sh , line=${LINENO} :: EXEC : 'git pull gf master', 'RESUME :: gf ERROR' return 1${NRM}" >&2
+				return 1
+			fi
+
+		fi
+		return 1
+	}
+
+	cd "$HOME/$aer_pth"
+
+	l_00_echo_info "in $HOME/$aer_pth:"
+
+	if [[ -n "$(git status -s)" ]]; then
+
+		git add .
+		git commit -m "<>"
+		git push gf master
+		git push alt master
+		git push gh master
+
+	else
+		l_00_echo_warn "gs clear in $aer :: true?"
+	fi
+
+	cd ${DDir}
+}
+
 lfoe_rst_pth() {
 	PATH=$(/usr/bin/getconf PATH)
 }
