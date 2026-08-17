@@ -190,7 +190,7 @@ fn_vewthhg5231454gfvs() {
 			local item3=
 			for item3 in ${repo_in_rpo_any_arr_234543htrbgfwr3442[@]}; do
 				l_00_echo_info "---in ~/${item3}---"
-				cd ~/${item3}
+				cd ~/rpo/${item3}
 				git push $part_bare/new_bare/${item3} master
 			done
 
