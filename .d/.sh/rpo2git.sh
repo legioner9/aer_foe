@@ -37,7 +37,7 @@ fn_vewthhg5231454gfvs() {
 	local repo_any_arr_234543htrbg=(edu_clng edu_dta_001 edu_dta_002 edu_lnx tml_a cmn_lex fns_bsh git_flw)
 
 	#! ~/rpo
-	local repo_in_rpo_any_arr_234543htrbgfwr3442=(rpo_dta_001)
+	local repo_in_rpo_any_arr_234543htrbgfwr3442=(rpo_dta_001 rpo_pax_001 rpo_pax_sh)
 
 	# local repo_all_arr_234543htrbg=(aer_foe edu_clng edu_lnx tml_a cmn_lex fns_bsh git_flw)
 	# local repo_any_arr_234543htrbg=(edu_clng edu_lnx tml_a cmn_lex fns_bsh git_flw)
