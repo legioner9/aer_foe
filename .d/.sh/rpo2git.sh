@@ -55,6 +55,20 @@ fn_vewthhg5231454gfvs() {
 			git remote add alt ssh://forgejo@altlinux.space/legioner9/$adcae_12344.git
 		fi
 	}
+
+	check_repo_in_rpo_adcae_1234asew4() {
+
+		if [[ ! -d $HOME/rpo/$adcae_in_rpo_12344 ]]; then
+			echo -e "${ECHO_WARN}in file://$HOME\aer_foe\.d\.sh\rpo2git.sh , line=${LINENO} edu_lnx REPO_NOT_EXIST return 1${NRM}" >&2
+			mkdir $HOME/rpo/
+			cd $HOME/rpo/
+			git clone git@gitflic.ru:legioner9/$adcae_in_rpo_12344.git
+			cd $HOME/rpo/$adcae_in_rpo_12344
+			git remote add gh git@github.com:legioner9/$adcae_in_rpo_12344.git
+			git remote add gf git@gitflic.ru:legioner9/$adcae_in_rpo_12344.git
+			git remote add alt ssh://forgejo@altlinux.space/legioner9/$adcae_in_rpo_12344.git
+		fi
+	}
 	local item=
 
 	l_00_echo_info "LIST ALL rpo_nm:"
@@ -63,7 +77,7 @@ fn_vewthhg5231454gfvs() {
 		l_00_echo_code $item
 	done
 
-	l_00_echo_info "STP:: add remote to ANY rpo"
+	l_00_echo_info "STP:: add remote to ANY repo"
 	unset IFS
 	local item_132456125=
 	for item_132456125 in ${repo_any_arr_234543htrbg[@]}; do
@@ -71,6 +85,25 @@ fn_vewthhg5231454gfvs() {
 		l_00_echo_info "--- treat $item_132456125 ---"
 		adcae_12344=$item_132456125
 		check_repo_adcae_12344
+
+	done
+
+	l_00_echo_info "LIST ALL rpo_nm in rpo:"
+	local item_12342=
+	for item_12342 in ${repo_in_rpo_any_arr_234543htrbgfwr3442[@]}; do
+		l_00_echo_code $item_12342
+	done
+
+	adcae_in_rpo_12344=
+
+	l_00_echo_info "STP:: add remote to ANY rpo in rpo"
+	unset IFS
+	local item_rpo_132456125=
+	for item_rpo_132456125 in ${repo_in_rpo_any_arr_234543htrbgfwr3442[@]}; do
+
+		l_00_echo_info "--- treat $item_rpo_132456125 ---"
+		adcae_in_rpo_12344=$item_rpo_132456125
+		check_repo_in_rpo_adcae_1234asew4
 
 	done
 
