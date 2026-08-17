@@ -77,7 +77,7 @@ lfoe_dfn_os2e() {
 }
 
 lfoe_this_dir_git2e() {
-
+	l_00_echo_code "start::lfoe_this_dir_git2e"
 	local arg1="$1"
 
 	[[ "$arg1" != "-h" ]] || {
@@ -85,6 +85,7 @@ lfoe_this_dir_git2e() {
         lfoe_this_dir_git2e :: ret true if pwd in git_repo
         \$1 [, -h]
         "
+		l_00_echo_code "end::lfoe_this_dir_git2e"
 		return 0
 	}
 
@@ -96,7 +97,7 @@ lfoe_this_dir_git2e() {
 }
 
 lfoe_gig_sh() {
-
+	l_00_echo_code "start::lfoe_gig_sh"
 	[[ "$1" != "-h" ]] || {
 		echo -e "
         lfoe_gig_sh :: create \$1 file in \$2 from ${HOME}/aer_foe/.d/.sh/.lib.sh/.dta/.tml/sh1.tml [, \$3 into_body_file]
@@ -104,6 +105,7 @@ lfoe_gig_sh() {
         \$2 file name with .sh
         [ optional :: \$3 file for insert into {{body}} :: [, contane var_{fn_nm}] ]
         "
+		l_00_echo_code "end::lfoe_gig_sh"
 		return 0
 	}
 
@@ -177,7 +179,7 @@ lfoe_gig_sh() {
 	fi
 
 	lfoe_path_to_var "${fl_nm}"
-
+	l_00_echo_code "start::lfoe_gig_sh"
 	return 0
 
 }
@@ -255,7 +257,7 @@ _lfoe_tml() {
 # ------------------------------- tml fn --------------------------------------
 
 lfoe_rpo2git() {
-
+	l_00_echo_code "start::lfoe_rpo2git"
 	ping gitflic.ru -c 1 >/dev/null || {
 		echo -e "${ECHO_RET1}in file://$fn_nm , line=${LINENO}  EXEC : '[[ ping gitflic.ru -c 1 >/dev/null ]]', return 1${NRM}" >&2
 		return 1
@@ -355,9 +357,12 @@ lfoe_rpo2git() {
 	fi
 
 	cd ${DDir}
+	l_00_echo_code "end::lfoe_rpo2git"
 }
 
 lfoe_rpo2git_pth() {
+
+	l_00_echo_code "start::lfoe_rpo2git_pth"
 
 	ping gitflic.ru -c 1 >/dev/null || {
 		echo -e "${ECHO_RET1}in file://$fn_nm , line=${LINENO}  EXEC : '[[ ping gitflic.ru -c 1 >/dev/null ]]', return 1${NRM}" >&2
@@ -469,6 +474,9 @@ lfoe_rpo2git_pth() {
 	fi
 
 	cd ${DDir}
+
+	l_00_echo_code "end::lfoe_rpo2git_pth"
+
 }
 
 lfoe_rst_pth() {

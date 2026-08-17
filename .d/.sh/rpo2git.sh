@@ -1,7 +1,7 @@
 #!/bin/bash
 
 fn_vewthhg5231454gfvs() {
-
+	l_00_echo_code "start::fn_vewthhg5231454gfvs"
 	# echo $1
 	# return 0
 
@@ -19,7 +19,7 @@ fn_vewthhg5231454gfvs() {
 	#! end ------------------------
 
 	#! start lfoe_rpo2git
-
+	l_00_echo_code "start::lfoe_rpo2git aer_foe $1"
 	lfoe_rpo2git aer_foe "$1" || {
 		echo -e "${ECHO_RET1}in file://$fn_nm , line=${LINENO}  EXEC : ' lfoe_rpo2git aer_foe "$1" ', return 1${NRM}" >&2
 		return 1
@@ -44,7 +44,7 @@ fn_vewthhg5231454gfvs() {
 
 	cd ${DDir}
 	check_repo_adcae_12344() {
-
+		l_00_echo_code "start::check_repo_adcae_12344"
 		if [[ ! -d $HOME/$adcae_12344 ]]; then
 			echo -e "${ECHO_WARN}in file://$HOME\aer_foe\.d\.sh\rpo2git.sh , line=${LINENO} edu_lnx REPO_NOT_EXIST return 1${NRM}" >&2
 			cd ~
@@ -54,10 +54,11 @@ fn_vewthhg5231454gfvs() {
 			git remote add gf git@gitflic.ru:legioner9/$adcae_12344.git
 			git remote add alt ssh://forgejo@altlinux.space/legioner9/$adcae_12344.git
 		fi
+		l_00_echo_code "end::check_repo_adcae_12344"
 	}
 
 	check_repo_in_rpo_adcae_1234asew4() {
-
+		l_00_echo_code "start::check_repo_in_rpo_adcae_1234asew4"
 		if [[ ! -d $HOME/rpo/$adcae_in_rpo_12344 ]]; then
 			echo -e "${ECHO_WARN}in file://$HOME\aer_foe\.d\.sh\rpo2git.sh , line=${LINENO} edu_lnx REPO_NOT_EXIST return 1${NRM}" >&2
 			mkdir $HOME/rpo/
@@ -68,6 +69,7 @@ fn_vewthhg5231454gfvs() {
 			git remote add gf git@gitflic.ru:legioner9/$adcae_in_rpo_12344.git
 			git remote add alt ssh://forgejo@altlinux.space/legioner9/$adcae_in_rpo_12344.git
 		fi
+		l_00_echo_code "end::check_repo_in_rpo_adcae_1234asew4"
 	}
 	local item=
 
@@ -110,12 +112,14 @@ fn_vewthhg5231454gfvs() {
 	adcae_12344=
 
 	start_all_rpo2git_32eggsd() {
+		l_00_echo_code "start::start_all_rpo2git_32eggsd"
 		if [[ -f $HOME/$nm_rpo2git_2345ff/.d/.sh/rpo2git.sh ]]; then
 			. $HOME/$nm_rpo2git_2345ff/.d/.sh/rpo2git.sh
 		else
 			echo -e "${ECHO_WARN}in file://$HOME\$nm_rpo2git_2345ff\.d\.sh\rpo2git.sh , line=${LINENO}  EXEC : '[[ -f $HOME/$nm_rpo2git_2345ff/.d/.sh/rpo2git.sh ]]' in $(pwd), 'RESUME :: $HOME/$nm_rpo2git_2345ff/.d/.sh/rpo2git.sh IS_NOT file' return 1${NRM}" >&2
 
 		fi
+		l_00_echo_code "end::start_all_rpo2git_32eggsd"
 	}
 
 	local item4=
@@ -131,7 +135,7 @@ fn_vewthhg5231454gfvs() {
 	done
 
 	add_local_repo_56277647() {
-
+		l_00_echo_code "start::add_local_repo_56277647"
 		l_00_echo_code "\$part_bare=$part_bare"
 
 		# sudo find /run/media/stl/TOSH/ -type d -exec chmod 755 {} \;
@@ -180,10 +184,11 @@ fn_vewthhg5231454gfvs() {
 			l_00_echo_err "$part_bare NOT_EXIST"
 
 		fi
+		l_00_echo_code "end::add_local_repo_56277647"
 	}
 
 	add_local_repo_from_rpo_56277647vcafdfd() {
-
+		l_00_echo_code "start::add_local_repo_from_rpo_56277647vcafdfd"
 		l_00_echo_code "\$part_bare=$part_bare"
 
 		# sudo find /run/media/stl/TOSH/ -type d -exec chmod 755 {} \;
@@ -232,6 +237,7 @@ fn_vewthhg5231454gfvs() {
 			l_00_echo_err "$part_bare NOT_EXIST"
 
 		fi
+		l_00_echo_code "end::add_local_repo_from_rpo_56277647vcafdfd"
 	}
 
 	# in .gitconfig :
@@ -262,7 +268,7 @@ fn_vewthhg5231454gfvs() {
 			echo -e "${ECHO_WARN}in file://$HOME\$nm_rpo2git_2345ff\.d\.sh\rpo2git.sh , line=${LINENO}  EXEC : '[[ -f $HOME/$nm_rpo2git_2345ff/.d/.sh/rpo2git.sh ]]' in $(pwd), 'RESUME :: $HOME/$nm_rpo2git_2345ff/.d/.sh/rpo2git.sh IS_NOT file' return 1${NRM}" >&2
 		fi
 	done
-
+	l_00_echo_code "end::fn_vewthhg5231454gfvs"
 }
 
 fn_vewthhg5231454gfvs $@
