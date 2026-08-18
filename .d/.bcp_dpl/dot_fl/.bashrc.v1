@@ -19,8 +19,7 @@ cd $HOME
 
 fn_43564321dcsac() {
 
-	# local rpo_lib_rc_arr_12weqwfe5462=(aer_foe fns_bsh)
-	local rpo_lib_rc_arr_12weqwfe5462=(fns_bsh)
+	local rpo_lib_rc_arr_12weqwfe5462=(aer_foe fns_bsh)
 
 	local item_23rfvserfec=
 
