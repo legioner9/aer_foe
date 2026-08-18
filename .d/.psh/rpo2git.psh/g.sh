@@ -35,7 +35,7 @@ fn_29024_5735(){
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> ::
-        doing :: ? giged from .p007.d:g.tst as exa 
+        doing :: trat git flow in env aer_foe 
 			\$1 - 
 			\$2 - 
 			\$3 - 
