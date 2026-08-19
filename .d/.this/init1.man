@@ -23,14 +23,14 @@ ssh dir done?
 
 . ~/aer_foe/.d/.sh/rpo2git.sh
 
-. ~/aer_foe/.d/.depo/fonts/.sh/install_fints.sh
+. ~/aer_foe/.d/.depo/fonts/.sh/install_fonts.sh
 . ~/aer_foe/.d/.sh/install.vsc.ext.sh
-. ~/aer_foe/.d/.sh/dpl.vsc.env.sh
+. ~/aer_foe/.d/.sh/bcp_dpl.sh/dpl.vsc.env.sh
 
 
 -------------------------------------
 https://www.onlinewebfonts.com/download/e997d4775f35d8fad319d34dab07e857
-. ~/aer_foe/.d/.depo/fonts/.sh/install_fints.sh
+. ~/aer_foe/.d/.depo/fonts/.sh/install_fonts.sh
 
 format bash :: shfmt (apt install)
 https://github.com/mvdan/sh
