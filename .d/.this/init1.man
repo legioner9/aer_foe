@@ -17,6 +17,7 @@ git config --global user.name "legioner9"
 
 cd ~
 git clone https://gitflic.ru/project/legioner9/aer_foe.git
+git clone https://gitflic.ru/project/legioner9/fns_bsh.git
 
 ssh dir done?
 .bashrc done?
