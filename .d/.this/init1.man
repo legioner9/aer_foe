@@ -2,7 +2,7 @@ su -
 apt-get update
 apt-get dist-upgrade
 apt-get install sudo git eepm appinstall zip go shfmt gnome-terminal \
-  clang22.1-tools qt-creator nautilus mate-terminal gitk git-gui -y
+  clang22.1-tools qt-creator nautilus mate-terminal gitk git-gui java-17-openjdk -y
 
 unalias -a # del sys alias
 (check this: alias)
@@ -28,7 +28,7 @@ ssh dir done?
 . ~/aer_foe/.d/.sh/install.vsc.ext.sh
 . ~/aer_foe/.d/.sh/bcp_dpl.sh/dpl.vsc.env.sh
 
-
+cp ~/aer_foe/.d/.bcp_dpl/i_wt/.desktop ~/Рабочий стол
 -------------------------------------
 https://www.onlinewebfonts.com/download/e997d4775f35d8fad319d34dab07e857
 . ~/aer_foe/.d/.depo/fonts/.sh/install_fonts.sh

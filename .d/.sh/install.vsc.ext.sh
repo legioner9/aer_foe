@@ -35,6 +35,9 @@ code --install-extension moshfeu.compare-folders
 # symlinks
 code --install-extension anbuselvan.vscode-symlink
 # color md files
-
+jebbs.plantuml
 # shellchec k
 code --install-extension timonwong.shellcheck
+
+# plant uml
+code --install-extension jebbs.plantuml
