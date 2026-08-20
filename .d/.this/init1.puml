@@ -1,0 +1,14 @@
+@startmindmap
+*:. .bashrc
+
+<code>
+. init1.sh
+</code>
+;
+**:init1.sh
+
+<code>
+. .bashrc
+</code>
+;
+@endmindmap
