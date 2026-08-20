@@ -2,13 +2,20 @@
 *:. .bashrc
 
 <code>
-. init1.sh
+for {} in (aer_foe fns_bsh)
+    $HOME/{}/.d/.repo.d/.repo.rc
 </code>
 ;
-**:init1.sh
-
+**:aer_foe//.repo.rc
 <code>
 . .bashrc
+</code>
+;
+**:fns_bsh//.repo.rc is ::
+<code>
+in fns_bsh/ ::
+    . fns_bsh//l.sh
+    l_01_c_up .lib.sh
 </code>
 ;
 @endmindmap
