@@ -48,11 +48,19 @@
 		"description": "#!bash"
 	},
 	// # from:: 
-		"#* from::": {
+	"#* from::": {
 		"prefix": "#* from:: ~",
 		"body": [
 			"#* from:: ",
 		],
 		"description": "#* from:: ~"
+	},
+	// file://
+	"file:/": {
+		"prefix": "file://",
+		"body": [
+			"file://",
+		],
+		"description": "file://"
 	},
 }
