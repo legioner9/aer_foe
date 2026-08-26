@@ -28,6 +28,7 @@
 	"out_err": {
 		"prefix": "out_err",
 		"body": [
+			"l_00_echo_code \"end :: <${FUNCNAME[0]}> '$@'\"",
 			"echo -e \"\\${ECHO_RET1}in file://\\$fn_nm , line=\\${LINENO}  EXEC : '[[ ! -d \"\\$dr_nm\" ]]', return 1\\${NRM}\" >&2",
 			// # echo -e "${ECHO_RET1}in file://$fn_nm , line=${LINENO}  EXEC : '[[ ! -d \"$dr_nm\" && 6 -eq ${#arg1} ]]', return 1${NRM}" >&2
 			"return 1"
@@ -37,6 +38,7 @@
 	"out_ret1_2": {
 		"prefix": "out_ret1_2",
 		"body": [
+			"l_00_echo_code \"end :: <${FUNCNAME[0]}> '$@'\"",
 			"echo -e \"\\${ECHO_RET1}in file://\\$(eval \"echo \\\\\\$fl_pth_fn_\\${rnd}\") , line=\\${LINENO}  EXEC_FAIL : '...', return 1\\${NRM}\" >&2",
 			// # echo -e "${ECHO_RET1}in file://$fn_nm , line=${LINENO}  EXEC : '[[ ! -d \"$dr_nm\" && 6 -eq ${#arg1} ]]', return 1${NRM}" >&2
 			"return 1"
@@ -46,6 +48,7 @@
 		"out_ret0_2": {
 		"prefix": "out_ret0_2",
 		"body": [
+			"l_00_echo_code \"end :: <${FUNCNAME[0]}> '$@'\"",
 			"echo -e \"\\${ECHO_SUCC}in file://\\$(eval \"echo \\\\\\$fl_pth_fn_\\${rnd}\") , line=\\${LINENO}  EXEC_SUCC : '...', return 0\\${NRM}\"",
 			// # echo -e "${ECHO_RET1}in file://$fn_nm , line=${LINENO}  EXEC : '[[ ! -d \"$dr_nm\" && 6 -eq ${#arg1} ]]', return 1${NRM}" >&2
 			"return 0"
