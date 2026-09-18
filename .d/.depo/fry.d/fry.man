@@ -1,5 +1,5 @@
 prox 217.177.32.161! 5533!!> stlk1a!> 321!!>
-
+qwaszx1!@A#
 sudo systemctl daemon-reload
 sudo systemctl enable 3proxy
 sudo systemctl start 3proxy
@@ -51,3 +51,7 @@ ssh root@ip-сервера
 лицевой счет 428238
 дог 5307791
 роут 35612148
+log zpd68c
+pr kmZBC
+650+220
+
