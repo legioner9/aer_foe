@@ -7,8 +7,8 @@
 
 cd $1
 
-rm ifo.zip
+# rm ifo.zip
 
 zip -e -r ifo.zip ifo
 
-rm -r ifo
+# rm -r ifo
