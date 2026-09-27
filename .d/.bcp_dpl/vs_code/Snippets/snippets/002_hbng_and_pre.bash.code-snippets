@@ -63,4 +63,11 @@
 		],
 		"description": "file://"
 	},
+	// s_fn_tart//
+	"s_fn_tart": {
+		"prefix": "s_fn_tart/",
+		"body": [
+			"l_00_echo_code \"start :: <\\${FUNCNAME[0]}> '$@'\" #exit",
+		],
+	}
 }
