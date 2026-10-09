@@ -64,8 +64,8 @@
 		"description": "file://"
 	},
 	// s_fn_tart//
-	"s_fn_tart": {
-		"prefix": "s_fn_tart/",
+	"s_fn_start": {
+		"prefix": "s_fn_start/",
 		"body": [
 			"l_00_echo_code \"start :: <\\${FUNCNAME[0]}> '$@'\" #exit",
 		],
