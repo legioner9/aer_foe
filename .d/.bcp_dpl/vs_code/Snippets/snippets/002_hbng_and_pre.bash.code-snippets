@@ -69,5 +69,11 @@
 		"body": [
 			"l_00_echo_code \"start :: <\\${FUNCNAME[0]}> '$@'\" #exit",
 		],
-	}
+	},
+	"echo_var": {
+		"prefix": "echo_var",
+		"body": [
+			"l_00_echo_info \"\\\\$$1=$$1\"",
+		],
+	},
 }
