@@ -12,3 +12,5 @@ cd $1
 zip -e -r ifo.zip ifo
 
 # rm -r ifo
+
+echo "!DO rm -r ifo"
