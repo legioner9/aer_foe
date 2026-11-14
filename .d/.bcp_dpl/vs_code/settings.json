@@ -76,8 +76,7 @@
     "*.md_toc2f*": "markdown",
     "*.via": "markdown",
     "*.pr": "shellscript",
-    "*.tml": "shellscript"
-
+    "*.tml": "shellscript",
   },
   "markdown.preview.fontFamily": "'M+ 1mn regular',-apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif",
   "terminal.integrated.fontFamily": "Crystal,'M+ 1mn regular','M+ 1m regular','Victor Mono','PT Sans+','FreeSans+','Pragmata Pro Mono Regular',Consolas,'Courier New'",
@@ -161,6 +160,15 @@
       "bold": false,
       "italic": false
     },
+    {
+      "tag": "//",
+      "color": "#c67afd",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
   ],
   "http.proxyStrictSSL": false,
   "http.fetchAdditionalSupport": false,
@@ -171,5 +179,8 @@
   "emmet.includeLanguages": {
     // "jekyll": "html",
     "scss": "css"
+  },
+  "[plantuml]": {
+    "editor.defaultFormatter": "jebbs.plantuml"
   }
 }
