@@ -4,11 +4,13 @@ fn_caewr34tgwetr4g(){
     
     # alias dkr="docker"
 
+	local aer="aer_foe"
+
     unalias -a
     
-    pro_pth=$HOME/aer_foe
-    fn_nm=$pro_pth/.d/.repo.d/.repo.rc
-    als_nm=$pro_pth/.d/.repo.d/.repo.als
+    local pro_pth=$HOME/${aer}
+    local fn_nm=$pro_pth/.d/.repo.d/.repo.rc
+    local als_nm=$pro_pth/.d/.repo.d/.repo.als
     
     
     echo "start $fn_nm"
